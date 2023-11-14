@@ -45,3 +45,17 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+button {
+  width: fit-content;
+  margin: auto;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-family: inherit;
+}
+button:hover {
+  box-shadow: 0 0 10px rgb(170, 170, 170);
+}
