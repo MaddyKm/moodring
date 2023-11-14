@@ -53,6 +53,22 @@
           <p>Upset</p>
         </div>
       </div>
+      <div>
+        <input
+          id="alphaRange"
+          class="range"
+          type="range"
+          min="0"
+          max="1"
+          step=".1"
+          value="0"
+          oninput="alphaChange(this.value)"
+        />
+        <div class="feeling">
+          <p>Fragile</p>
+          <p>Strong</p>
+        </div>
+      </div>
       <button type="submit" id="colorButton" onclick="setBackgroundColor()">
         Find Today's Color
       </button>

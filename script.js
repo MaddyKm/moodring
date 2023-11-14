@@ -2,6 +2,7 @@
 const red = document.getElementById("redRange");
 const green = document.getElementById("greenRange");
 const blue = document.getElementById("blueRange");
+const alpha = document.getElementById("alphaRange");
 const colorButton = document.getElementById("colorButton");
 //DATA
 
@@ -23,7 +24,15 @@ function setBackgroundColor() {
   const blueVal = blue.value;
   document.body.style.transition = "background 5s";
   document.body.style.background =
-    "rgb(" + redVal + ", " + greenVal + ", " + blueVal + ")";
+    "rgba(" +
+    redVal +
+    ", " +
+    greenVal +
+    ", " +
+    blueVal +
+    ", " +
+    alpha.value +
+    ")";
 }
 //USER INTERACTIONS
 
