@@ -9,26 +9,54 @@
   <body>
     <div class="sliders">
       <div>
-        <input class="range" type="range" min="0" max="255" value="0" />
+        <input
+          id="redRange"
+          class="range"
+          type="range"
+          min="0"
+          max="255"
+          value="0"
+          oninput="redChange(this.value)"
+        />
         <div class="feeling">
           <p>Relaxed</p>
           <p>Angry</p>
         </div>
       </div>
       <div>
-        <input class="range" type="range" min="0" max="255" value="0" />
+        <input
+          id="greenRange"
+          class="range"
+          type="range"
+          min="0"
+          max="255"
+          value="0"
+          oninput="greenChange(this.value)"
+        />
         <div class="feeling">
           <p>Closed Off</p>
           <p>Open</p>
         </div>
       </div>
       <div>
-        <input class="range" type="range" min="0" max="255" value="0" />
+        <input
+          id="blueRange"
+          class="range"
+          type="range"
+          min="0"
+          max="255"
+          value="0"
+          oninput="blueChange(this.value)"
+        />
         <div class="feeling">
           <p>Hopeful</p>
           <p>Upset</p>
         </div>
       </div>
+      <button type="submit" id="colorButton" onclick="setBackgroundColor()">
+        Find Today's Color
+      </button>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>
