@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="./style.css" />
     <title>Mood Ring</title>
   </head>
+
   <body>
+    <h2>How Are You Feeling?</h2>
     <div class="sliders">
       <div>
         <input
@@ -20,7 +22,7 @@
         />
         <div class="feeling">
           <p>Relaxed</p>
-          <p>Angry</p>
+          <p>Agitated</p>
         </div>
       </div>
       <div>
@@ -62,7 +64,6 @@
           max="1"
           step=".1"
           value="0"
-          oninput="alphaChange(this.value)"
         />
         <div class="feeling">
           <p>Fragile</p>
@@ -74,5 +75,8 @@
       </button>
     </div>
   </body>
+  <footer>
+    <p>© 2023 MMK</p>
+  </footer>
   <script src="script.js"></script>
 </html>

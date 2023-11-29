@@ -4,9 +4,10 @@
 }
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+
   background: #f5f2f2;
 }
 
@@ -58,4 +59,27 @@ button {
 }
 button:hover {
   box-shadow: 0 0 10px rgb(170, 170, 170);
+}
+h2 {
+  text-shadow: 2px 2px 6px white;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-around;
+  flex-direction: row;
+  margin: 1em;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 10%;
+}
+header {
+  width: 100%;
 }
